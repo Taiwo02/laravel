@@ -19,3 +19,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/', function () {
     return response()->json("welcome");
 });
+// Route::resource('/',"PostController");
+// Route::get('/postses',"PostController@index");
+// Route::post('/login',"LoginController");
+// Route::post('/register',"RegisterController@created");
+
+// Route::get('/about',"TestingController@about");
+// Route::get('/gallary',"TestingController@gallary");
+// Route::get('/register',"TestingController@register");
+// Route::get('/users',"UsersController@all_users");
+// Route::resource('post',"PostController");
+// Route::resource('Messages',"MessageController");
+// Route::get('profile', 'UsersController@profile');
+// Route::post('profile', 'UsersController@update_avatar');
+// Route::resource('coment',"CommentController");
+// Route::get('/comment/gk','CommentController@index');
+// Auth::routes();
+// Route::get('/dashboard', 'DashboardController@index');

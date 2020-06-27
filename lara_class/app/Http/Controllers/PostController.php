@@ -26,12 +26,13 @@ class PostController extends Controller
      */
     public function index()
     {
+      return  Post::all();
         // $posts= Post::all();
         //   return  Post::where('tittle','post two')->get();
         // $posts = DB::select('SELECT * FROM posts');
         // $posts= Post::orderBy('tittle','asc')->paginate(1);
-        $posts= Post::orderBy('created_at','asc')->get();
-        return view('posts.index')->with('posts',$posts);
+        // return Post::orderBy('created_at','asc')->get();
+        // return view('posts.index')->with('posts',$posts);
     }
 
     /**
